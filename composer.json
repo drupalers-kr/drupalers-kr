@@ -1,0 +1,88 @@
+{
+    "name": "drupalers-kr/drupalers-kr",
+    "description": "Composer template for drupalers.kr",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/ckeditor",
+                "version": "4.5.9",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.9/ckeditor_4.5.9_standard.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "derhasi/composer-preserve-paths": "0.1.*",
+        "drupal/drupal": "7.43.0",
+        "drupal/ctools": "7.1.*",
+        "drupal/date": "7.2.*",
+        "drupal/features_extra": "7.1.*",
+        "drupal/features": "7.2.*",
+        "drupal/media": "7.1.*",
+        "drupal/google_analytics": "7.2.*",
+        "drupal/honeypot": "7.1.*",
+        "drupal/insert": "7.1.*",
+        "drupal/l10n_update": "7.1.*",
+        "drupal/libraries": "7.1.*",
+        "drupal/link": "7.1.*",
+        "drupal/pathauto": "7.1.*",
+        "drupal/scheduler": "7.1.*",
+        "drupal/smtp": "7.1.*",
+        "drupal/strongarm": "7.2.*",
+        "drupal/token": "7.1.*",
+        "drupal/transliteration": "7.3.*",
+        "drupal/views": "7.3.*",
+        "drupal/views_slideshow": "7.3.*",
+        "drupal/wysiwyg": "7.2.*-dev",
+        "drupal-composer/drupal-security-advisories": "7.x-dev",
+        "drupal/registry_rebuild": "7.*.*",
+        "drush/drush": "7.*.*",
+        "ckeditor/ckeditor": "4.5.9"
+    },
+    "conflict": {
+        "drupal/core": "8.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp $(pwd)/web/sites/default/default.settings.php $(pwd)/web/sites/default/settings.php",
+            "cat $(pwd)/settings.php >> $(pwd)/web/sites/default/settings.php && chmod a-w $(pwd)/web/sites/default/settings.php",
+            "mkdir -p $(pwd)/web/sites/default/files && chmod 777 $(pwd)/web/sites/default/files",
+            "ln -s $(pwd)/custom-modules/ $(pwd)/web/sites/all/modules/",
+            "ln -s $(pwd)/custom-themes/ $(pwd)/web/sites/all/themes/"
+        ]
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "web/": ["type:drupal-core"],
+            "web/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
+            "web/sites/all/themes/contrib/{$name}/": ["type:drupal-theme"],
+            "web/sites/all/libraries/{$name}/": ["type:drupal-library"],
+            "web/sites/all/drush/{$name}/": ["type:drupal-drush"],
+            "web/profiles/{$name}/": ["type:drupal-profile"]
+        },
+        "preserve-paths": [
+            "web/sites/all/modules/contrib",
+            "web/sites/all/modules/custom",
+            "web/sites/all/themes/contrib",
+            "web/sites/all/themes/custom",
+            "web/sites/all/libraries",
+            "web/sites/all/drush",
+            "web/sites/default/settings.php",
+            "web/sites/default/files"
+        ]
+    }
+}

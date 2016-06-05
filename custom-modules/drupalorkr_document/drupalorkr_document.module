@@ -1,0 +1,44 @@
+<?php
+/**
+ * @file: drupalorkr_document.module
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function drupalorkr_document_theme($existing, $type, $theme, $path) {
+  return array(
+    'drupalorkr_document_footer_line' => array(
+      'variables' => array(),
+    ),
+    'drupalorkr_document_contributors' => array(
+      'variables' => array(
+        'created' => '',
+        'updated' => '',
+        'contributors' => '',
+        'edit_link' => '',
+      ),
+      'template' => 'document-contributors',
+    ),
+    'drupalorkr_document_meta_sidebar' => array(
+      'variables' => array(
+        'about' => array(),
+      ),
+      'template' => 'document-meta-sidebar',
+    ),
+  );
+}
+
+/**
+ * implements hook_block_view_alter
+ * 책 메뉴 블록에 문서 저작권 추가하기
+ */
+function drupalorkr_document_block_view_book_navigation_alter(&$data, $block) {
+  $data['content']['#post_render'] = array('drupalorkr_document_add_note');
+  //debug(array_keys($data['content']));
+}
+
+function drupalorkr_document_add_note($markup, $element) {
+  $note = '<p class="doc-comments">드루팔 서울의 온라인 문서는 개별 기여자들에게 저작권이 있으며 <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.ko" title="">저작자표시-동일조건변경허락 3.0</a>에 따라 사용할 수 있습니다. 또한 <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title=""> GNU 일반 공중 사용 허가서</a>에 따라 PHP 코드를 배포합니다. 문서의 콘텐츠를 향상시키기 위해 문서에 대한 댓글을 사용하고 이후에는 삭제합니다.</p>';
+  return $output = $markup . $note;
+}
