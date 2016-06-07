@@ -12,7 +12,8 @@
     "includePaths": [
       "./bower_components/bootstrap-sass/assets/stylesheets",
       "./bower_components/font-awesome/scss",
-      "./bower_components/compass-mixins/lib"
+      "./bower_components/compass-mixins/lib",
+      "./bower_components/noto-sans-kr"
     ]
   },
   "js": {
@@ -30,7 +31,8 @@
   },
   "fonts": {
     "src": [
-      "./bower_components/font-awesome/fonts/**.*"
+      "./bower_components/font-awesome/fonts/**.*",
+      "./bower_components/noto-sans-kr/fonts/**.*"
     ],
     "dest": "./assets/fonts/"
   }

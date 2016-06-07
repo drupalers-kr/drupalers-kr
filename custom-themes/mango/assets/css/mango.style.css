@@ -1060,7 +1060,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.42857;
   color: #333333;
@@ -1142,7 +1142,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5233,7 +5233,7 @@ button.close {
   position: absolute;
   z-index: 1030;
   display: block;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5346,7 +5346,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Noto Sans Korean", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8561,5 +8561,29 @@ ul.dropdown-menu li {
 .views-exposed-form .views-submit-button,
 .views-exposed-form .views-reset-button {
   margin-top: 3px; }
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Noto Sans Korean Thin");
+  src: url("../fonts/NotoSans-Thin.eot");
+  src: url("../fonts/NotoSans-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Thin.woff2") format("woff2"), url("../fonts/NotoSans-Thin.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans Korean Light");
+  src: url("../fonts/NotoSans-Light.eot");
+  src: url("../fonts/NotoSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Light.woff2") format("woff2"), url("../fonts/NotoSans-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Sans Korean';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans Korean Regular");
+  src: url("../fonts/NotoSans-Regular.eot");
+  src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff"); }
 
 /*# sourceMappingURL=mango.style.css.map */
