@@ -46,7 +46,9 @@
         "drupal-composer/drupal-security-advisories": "7.x-dev",
         "drupal/registry_rebuild": "7.*.*",
         "drush/drush": "7.*.*",
-        "ckeditor/ckeditor": "4.5.9"
+        "ckeditor/ckeditor": "4.5.*",
+        "drupal/radix": "7.3.*",
+        "drupal/jquery_update": "7.2.*"
     },
     "conflict": {
         "drupal/core": "8.*"
