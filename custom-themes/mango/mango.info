@@ -6,8 +6,8 @@ core        = 7.x
 ; Base - Radix
 base theme  = radix
 
-
 ; Regions
+regions[jumbotron] = Jumbotron
 regions[content] = Content
 
 ; Breakpoints
