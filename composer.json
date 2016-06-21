@@ -57,9 +57,10 @@
         "post-install-cmd": [
             "cp $(pwd)/web/sites/default/default.settings.php $(pwd)/web/sites/default/settings.php",
             "cat $(pwd)/settings.php >> $(pwd)/web/sites/default/settings.php && chmod a-w $(pwd)/web/sites/default/settings.php",
-            "mkdir -p $(pwd)/web/sites/default/files && chmod 777 $(pwd)/web/sites/default/files",
-            "ln -s $(pwd)/custom-modules/ $(pwd)/web/sites/all/modules/",
-            "ln -s $(pwd)/custom-themes/ $(pwd)/web/sites/all/themes/"
+            "chmod u+w $(pwd)/web/sites/default",
+            "ln -s $(pwd)/files/ $(pwd)/web/sites/default/files",
+            "ln -s $(pwd)/custom-modules/ $(pwd)/web/sites/all/modules/custom",
+            "ln -s $(pwd)/custom-themes/ $(pwd)/web/sites/all/themes/custom"
         ]
     },
     "config": {

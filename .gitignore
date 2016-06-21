@@ -1,5 +1,5 @@
 web
 vendor
 .env.yml
-bower_components
 dump
+files

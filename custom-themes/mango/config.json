@@ -1,7 +1,7 @@
 {
   "name": "mango",
   "description": "A theme based on Radix.",
-  "browserSyncProxy" : "http://127.0.0.1",
+  "browserSyncProxy" : "127.0.0.1:8888",
   "bowerDir": "./bower_components",
   "css": {
     "file" : "mango.style.scss",
