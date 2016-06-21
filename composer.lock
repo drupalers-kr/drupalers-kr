@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "18fcfd2579f18e16178a8b87c2e84b19",
-    "content-hash": "67436de758be921c40f6f1e50507b25a",
+    "hash": "94b39fff5411fedb68394a8fa55b7c42",
+    "content-hash": "fe431dcf4bb32b97d7a8fe155868666e",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-security-advisories.git",
-                "reference": "0c88afc68ef7b36cc887ee796c9555c97e4f1a91"
+                "reference": "0f109eba78ef99f848947d37b5ef9663b27031ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-security-advisories/zipball/0c88afc68ef7b36cc887ee796c9555c97e4f1a91",
-                "reference": "0c88afc68ef7b36cc887ee796c9555c97e4f1a91",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-security-advisories/zipball/0f109eba78ef99f848947d37b5ef9663b27031ad",
+                "reference": "0f109eba78ef99f848947d37b5ef9663b27031ad",
                 "shasum": ""
             },
             "conflict": {
@@ -312,7 +312,7 @@
                 "drupal/document": "<7.1.21",
                 "drupal/domain": "<7.2.4",
                 "drupal/dropbox_client": "<7.4.0",
-                "drupal/drupal": "<7.0.0-alpha3,<7.0.0-alpha4,<7.0.0-alpha5,<7.0.0-alpha6,<7.0.0-alpha7,<7.0.0-beta1,<7.0.0-beta3,<7.0.0-rc1,<7.0.0-rc2,<7.0.0-rc3,<7.1.0,<7.3.0,<7.5.0,<7.11.0,<7.13.0,<7.16.0,<7.18.0,<7.19.0,<7.20.0,<7.24.0,<7.26.0,<7.27.0,<7.29.0,<7.31.0,<7.32.0,<7.34.0,<7.35.0,<7.38.0,<7.39.0,<7.41.0,<7.43.0",
+                "drupal/drupal": "<7.0.0-alpha3,<7.0.0-alpha4,<7.0.0-alpha5,<7.0.0-alpha6,<7.0.0-alpha7,<7.0.0-beta1,<7.0.0-beta3,<7.0.0-rc1,<7.0.0-rc2,<7.0.0-rc3,<7.1.0,<7.3.0,<7.5.0,<7.11.0,<7.13.0,<7.16.0,<7.18.0,<7.19.0,<7.20.0,<7.24.0,<7.26.0,<7.27.0,<7.29.0,<7.31.0,<7.32.0,<7.34.0,<7.35.0,<7.38.0,<7.39.0,<7.41.0,<7.43.0,<7.44.0",
                 "drupal/ds": "<7.1.3,<7.1.7,<7.1.8,<7.2.1,<7.2.4,<7.2.8",
                 "drupal/easy_breadcrumb": "<7.2.10",
                 "drupal/easy_social": "<7.2.11",
@@ -329,6 +329,7 @@
                 "drupal/entityform_block": "<7.1.3",
                 "drupal/entityqueue": "<7.1.0-rc1",
                 "drupal/entityreference": "<7.1.0-beta3,<7.1.1",
+                "drupal/epsacrop": "<7.2.4",
                 "drupal/eu_cookie_compliance": "<7.1.12",
                 "drupal/fac": "<7.1.1",
                 "drupal/facebookshare": "<7.1.3",
@@ -433,7 +434,7 @@
                 "drupal/mvf": "<7.1.0-beta2",
                 "drupal/newsflash": "<7.2.5",
                 "drupal/nivo_slider": "<7.1.11",
-                "drupal/node_embed": "<7.1.0",
+                "drupal/node_embed": "<7.1.0,<7.1.2",
                 "drupal/node_field": "<7.2.45",
                 "drupal/node_view_permissions": "<7.1.2",
                 "drupal/nodeaccess": "<7.1.4",
@@ -462,6 +463,8 @@
                 "drupal/openomega": "<7.1.1",
                 "drupal/openpublic": "<7.1.2",
                 "drupal/osf": "<7.3.1",
+                "drupal/outline_designer": "<7.2.3",
+                "drupal/page_manager_search": "<7.1.2",
                 "drupal/pane": "<7.2.5",
                 "drupal/panels": "<7.3.0",
                 "drupal/panopoly_magic": "<7.1.17",
@@ -509,6 +512,7 @@
                 "drupal/require_login": "<7.1.1",
                 "drupal/responsive": "<7.1.6",
                 "drupal/responsive_blog": "<7.1.6",
+                "drupal/rest_json": "<7.1.5",
                 "drupal/restful": "<7.1.3,<7.1.6",
                 "drupal/restrict_node_page_view": "<7.1.2",
                 "drupal/restws": "<7.1.1,<7.1.2,<7.1.3,<7.1.4,<7.1.5,<7.2.0,<7.2.0-alpha3,<7.2.0-alpha4,<7.2.0-alpha5,<7.2.1,<7.2.3",
@@ -604,7 +608,7 @@
                 "drupal/video": "<7.2.9,<7.2.11",
                 "drupal/video_embed_field": "<7.2.0-beta9",
                 "drupal/video_filter": "<7.3.0",
-                "drupal/views": "<7.3.0-rc3,<7.3.6,<7.3.8,<7.3.10,<7.3.11",
+                "drupal/views": "<7.3.0-rc3,<7.3.6,<7.3.8,<7.3.10,<7.3.11,<7.3.14",
                 "drupal/views_bulk_operations": "<7.3.3",
                 "drupal/views_lang_switch": "<7.1.2",
                 "drupal/views_megarow": "<7.1.6",
@@ -636,7 +640,7 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "time": "2016-06-02 00:03:36"
+            "time": "2016-06-15 21:03:25"
         },
         {
             "name": "drupal/ctools",
@@ -741,15 +745,15 @@
         },
         {
             "name": "drupal/drupal",
-            "version": "7.43.0",
+            "version": "7.44.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "c136d1347b9b92145590cb1f84cc02a695d721fe"
+                "reference": "ab70cdc176d20a461937797d7ce04a27c9bfc18b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drupal-7.43.zip",
+                "url": "https://ftp.drupal.org/files/projects/drupal-7.44.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -844,7 +848,7 @@
             ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-02-24 19:26:52"
+            "time": "2016-06-15 20:05:31"
         },
         {
             "name": "drupal/features",
@@ -1436,15 +1440,15 @@
         },
         {
             "name": "drupal/views",
-            "version": "7.3.13",
+            "version": "7.3.14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "5c2bfc9638e3e78023d1efb754b79d4ac994d0c6"
+                "reference": "485b697082cf2ec42cc596eed952daa6f61e8012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.13.zip",
+                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1467,7 +1471,7 @@
             ],
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
-            "time": "2015-11-06 10:12:01"
+            "time": "2016-06-15 19:37:02"
         },
         {
             "name": "drupal/views_slideshow",

@@ -22,7 +22,7 @@
     "require": {
         "composer/installers": "~1.0",
         "derhasi/composer-preserve-paths": "0.1.*",
-        "drupal/drupal": "7.43.0",
+        "drupal/drupal": "7.44.0",
         "drupal/ctools": "7.1.*",
         "drupal/date": "7.2.*",
         "drupal/features_extra": "7.1.*",
@@ -40,7 +40,7 @@
         "drupal/strongarm": "7.2.*",
         "drupal/token": "7.1.*",
         "drupal/transliteration": "7.3.*",
-        "drupal/views": "7.3.*",
+        "drupal/views": "7.3.14",
         "drupal/views_slideshow": "7.3.*",
         "drupal/wysiwyg": "7.2.*-dev",
         "drupal-composer/drupal-security-advisories": "7.x-dev",
